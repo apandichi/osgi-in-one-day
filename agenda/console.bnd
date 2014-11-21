@@ -1,0 +1,3 @@
+Private-Package:  \
+	agenda.console
+Bundle-Activator: agenda.console.Activator
