@@ -29,7 +29,9 @@ public class Activator extends DependencyActivatorBase {
 	    manager.add(createComponent()
 	            .setInterface(Object.class.getName(), props)
 	            .setImplementation(AgendaConsole.class)
-	            .add(createServiceDependency().setService(Agenda.class)));		
+	            .add(createServiceDependency()
+	            		.setService(Agenda.class)
+	            		.setRequired(true)));		
 	}
 
 }
