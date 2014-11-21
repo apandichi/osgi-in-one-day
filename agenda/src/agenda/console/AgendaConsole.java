@@ -10,9 +10,13 @@ public class AgendaConsole {
 	private volatile Agenda agenda;
 	
 	public void listConferences() {
-	    List<Conference> conferences = agenda.listConferences();
-	    for (Conference conference : conferences) {
-	        System.out.println(conference.getName());
+		List<Conference> conferences = agenda.listConferences();
+	    if(conferences != null) {
+	        for (Conference conference : conferences) {
+	            System.out.println(conference.getName());
+	        }
+	    } else {
+	        System.out.println("Agenda not available");
 	    }
 	}
 
