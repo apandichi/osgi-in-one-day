@@ -1,2 +1,6 @@
 agenda/.settings/org.eclipse.jdt.core.prefs
 agenda/.settings/bndtools.core.prefs
+agenda/.classpath
+agenda/.project
+cnf/.classpath
+cnf/.project
